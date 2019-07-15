@@ -1,0 +1,12 @@
+<app-section heading="Seleted Lotto Balls">
+  <p>active-balls works!</p>
+  <ul *ngFor="let balls of [[1, 9], [10, 19], [20, 29], [30, 39], [40, 40]]">
+    <ul *ngFor="let ball of createBallList(balls[0], balls[1])">
+      <li [style.background]="ball.isActive ? 'green' : 'initial'">
+        <button (click)="toggleIsBallActive(ball.value)">
+          {{ ball.value }}
+        </button>
+      </li>
+    </ul>
+  </ul>
+</app-section>
