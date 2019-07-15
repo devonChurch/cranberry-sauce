@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "storybook": "start-storybook"
+    "storybook": "start-storybook",
+    "compodoc": "npx compodoc -p ./tsconfig.app.json"
   },
   "private": true,
   "dependencies": {
@@ -30,6 +31,7 @@
     "@angular/compiler-cli": "~8.1.1",
     "@angular/language-service": "~8.1.1",
     "@babel/core": "^7.5.4",
+    "@compodoc/compodoc": "^1.1.10",
     "@storybook/angular": "^5.1.9",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
