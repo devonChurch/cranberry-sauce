@@ -1,0 +1,8 @@
+<button
+  (click)="handleClick(value)"
+  class="ball"
+  [class.ball--active]="isActive"
+  [attr.data-test-id]="'lotto-ball-' + value"
+>
+  {{ value }}
+</button>
