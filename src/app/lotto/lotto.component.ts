@@ -13,7 +13,7 @@ export class LottoComponent implements OnInit {
   ngOnInit() {}
 
   checkIsBallActive = (ball: number): boolean => {
-    console.log("checkIsBallActive", ball);
+    // console.log("checkIsBallActive", ball);
     return Boolean(this.activeBalls[ball]);
   };
 

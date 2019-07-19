@@ -12,7 +12,7 @@ import { LottoBallComponent } from "../../components/balls/lotto-ball/lotto-ball
   template: `
     <app-active-balls
       [checkIsBallActive]="checkIsBallActive"
-      [toggleIsBallActive]="toggleIsBallActive"
+      [handleBallToggle]="toggleIsBallActive"
     ></app-active-balls>
   `
 })

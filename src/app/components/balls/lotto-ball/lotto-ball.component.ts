@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from "@angular/core";
+import { Component, OnInit, Input, EventEmitter, Output } from "@angular/core";
 
 @Component({
   selector: "app-lotto-ball",
@@ -8,7 +8,7 @@ import { Component, OnInit, Input } from "@angular/core";
 export class LottoBallComponent implements OnInit {
   @Input() value: number;
   @Input() isActive: number;
-  @Input() handleClick: (value: number) => void;
+  @Output() toggle: EventEmitter<number> = new EventEmitter();
 
   constructor() {}
 

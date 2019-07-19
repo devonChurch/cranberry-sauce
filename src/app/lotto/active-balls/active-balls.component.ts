@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from "@angular/core";
+import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
 
 @Component({
   selector: "app-active-balls",
@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from "@angular/core";
 })
 export class ActiveBallsComponent implements OnInit {
   @Input() checkIsBallActive: (ball: number) => boolean;
-  @Input() toggleIsBallActive: (ball: number) => void;
+  @Input() handleBallToggle: (ball: number) => void;
 
   constructor() {}
 

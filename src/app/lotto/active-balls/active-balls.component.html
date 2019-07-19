@@ -5,7 +5,7 @@
       <li>
         <app-lotto-ball
           [value]="ball.value"
-          [handleClick]="toggleIsBallActive"
+          (toggle)="handleBallToggle($event)"
           [isActive]="ball.isActive"
         ></app-lotto-ball>
       </li>
