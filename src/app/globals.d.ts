@@ -1,1 +1,3 @@
-declare var FOO: string;
+declare const FOO: string;
+declare const BAR: string;
+declare const BAZ: string;

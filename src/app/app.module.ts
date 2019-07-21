@@ -12,6 +12,8 @@ import { SectionComponent } from "./components/containers/section/section.compon
 import { LottoBallComponent } from "./components/balls/lotto-ball/lotto-ball.component";
 
 console.log(FOO);
+console.log(BAR);
+console.log(BAZ);
 
 @NgModule({
   declarations: [
