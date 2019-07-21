@@ -8,6 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "firebase": "firebase",
     "storybook": "start-storybook",
     "compodoc": "npx compodoc -p ./tsconfig.app.json",
     "typedoc": "typedoc --out typedocs --exclude \"**/*+(index|.spec|.e2e|.stories).ts\" ./src"
@@ -22,6 +23,7 @@
     "@angular/platform-browser": "~8.1.1",
     "@angular/platform-browser-dynamic": "~8.1.1",
     "@angular/router": "~8.1.1",
+    "firebase": "^6.3.1",
     "rxjs": "~6.4.0",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"
@@ -39,6 +41,7 @@
     "@types/node": "~8.9.4",
     "babel-loader": "^8.0.6",
     "codelyzer": "^5.0.0",
+    "firebase-tools": "^7.1.1",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.1.0",
