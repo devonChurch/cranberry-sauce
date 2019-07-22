@@ -1,7 +1,7 @@
 export const environment = {
   production: true,
   firebase: {
-    apiKey: "AIzaSyDpNkS1eC3yOm7XLIy1PKfVfmbO_AMWP6w",
+    apiKey: FIREBASE_API_KEY,
     authDomain: "cranberry-sauce.firebaseapp.com",
     databaseURL: "https://cranberry-sauce.firebaseio.com",
     projectId: "cranberry-sauce",

@@ -1,10 +1,7 @@
 require("dotenv").config();
 const webpack = require("webpack");
 const pkg = require("../package.json");
-
-console.log("custom webpack configuration");
-
-const { NODE_ENV, BAR, BAZ } = process.env;
+const { NODE_ENV, FIREBASE_API_KEY } = process.env;
 const define = variable => JSON.stringify(variable);
 
 module.exports = {
@@ -12,9 +9,7 @@ module.exports = {
     new webpack.DefinePlugin({
       APP_VERSION: define(pkg.version),
       NODE_ENV: define(NODE_ENV),
-      FOO: define("potato"),
-      BAR: define(BAR),
-      BAZ: define(BAZ)
+      FIREBASE_API_KEY: define(FIREBASE_API_KEY)
     })
   ]
 };

@@ -1,3 +1,1 @@
-declare const FOO: string;
-declare const BAR: string;
-declare const BAZ: string;
+declare const FIREBASE_API_KEY: string;
