@@ -1,16 +1,15 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { LottoComponent } from './lotto.component';
+import { LottoComponent } from "./lotto.component";
 
-describe('LottoComponent', () => {
+xdescribe("LottoComponent", () => {
   let component: LottoComponent;
   let fixture: ComponentFixture<LottoComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LottoComponent ]
-    })
-    .compileComponents();
+      declarations: [LottoComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +18,7 @@ describe('LottoComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });
