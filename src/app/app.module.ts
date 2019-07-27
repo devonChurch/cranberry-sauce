@@ -11,6 +11,7 @@ import { ActiveBallsComponent } from "./lotto/active-balls/active-balls.componen
 import { SectionComponent } from "./components/containers/section/section.component";
 import { LottoBallComponent } from "./components/balls/lotto-ball/lotto-ball.component";
 
+console.log(`v${APP_VERSION}`);
 console.log(FIREBASE_API_KEY);
 
 @NgModule({
