@@ -11,7 +11,7 @@
     "firebase": "firebase",
     "storybook": "start-storybook",
     "compodoc": "npx compodoc -p ./tsconfig.app.json",
-    "typedoc": "typedoc --out typedocs --exclude \"**/*+(index|.spec|.e2e|.stories).ts\" ./src"
+    "typedoc": "typedoc --out typedocs --exclude \"**/*+(.spec|.e2e|.stories).ts\" ./src"
   },
   "private": true,
   "dependencies": {

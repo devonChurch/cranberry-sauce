@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;environments/environment&quot; | cranberry-sauce</title>
+	<title>&quot;app/components/balls/lotto-ball/lotto-ball.utils&quot; | cranberry-sauce</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_environments_environment_.html">&quot;environments/environment&quot;</a>
+					<a href="_app_components_balls_lotto_ball_lotto_ball_utils_.html">&quot;app/components/balls/lotto-ball/lotto-ball.utils&quot;</a>
 				</li>
 			</ul>
-			<h1>External module &quot;environments/environment&quot;</h1>
+			<h1>External module &quot;app/components/balls/lotto-ball/lotto-ball.utils&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -71,50 +71,45 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Object literals</h3>
+							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-object-literal tsd-parent-kind-external-module"><a href="_environments_environment_.html#environment" class="tsd-kind-icon">environment</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_app_components_balls_lotto_ball_lotto_ball_utils_.html#getballcolorclassname" class="tsd-kind-icon">get<wbr>Ball<wbr>Color<wbr>Class<wbr>Name</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Object literals</h2>
-				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-external-module">
-					<a name="environment" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> environment</h3>
-					<div class="tsd-signature tsd-kind-icon">environment<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/devonChurch/cranberry-sauce/blob/11a40af/src/environments/environment.ts#L5">environments/environment.ts:5</a></li>
-						</ul>
-					</aside>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
-						<a name="environment.firebase" class="tsd-anchor"></a>
-						<h3>firebase</h3>
-						<div class="tsd-signature tsd-kind-icon">firebase<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/devonChurch/cranberry-sauce/blob/11a40af/src/environments/environment.ts#L7">environments/environment.ts:7</a></li>
-							</ul>
-						</aside>
-						<div class="tsd-type-declaration">
-							<h4>Type declaration</h4>
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="getballcolorclassname" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Ball<wbr>Color<wbr>Class<wbr>Name</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Ball<wbr>Color<wbr>Class<wbr>Name<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in app/components/balls/lotto-ball/lotto-ball.utils.ts:10</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the color specific <strong>CSS</strong> <em>Class Name</em> that matches the <em>Lotto Ball</em> value.</p>
+								</div>
+								<pre><code>getBallColorClassName(<span class="hljs-number">1</span>); <span class="hljs-comment">// "ball--orange"</span></code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">number</span></h5>
+								</li>
 							</ul>
-						</div>
-					</section>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
-						<a name="environment.production" class="tsd-anchor"></a>
-						<h3>production</h3>
-						<div class="tsd-signature tsd-kind-icon">production<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/devonChurch/cranberry-sauce/blob/11a40af/src/environments/environment.ts#L6">environments/environment.ts:6</a></li>
-							</ul>
-						</aside>
-					</section>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p><strong>BEM</strong> <em>Class Name</em> <code>&quot;ball--[color]&quot;</code>.</p>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -136,7 +131,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="_app_components_balls_lotto_ball_lotto_ball_component_.html">"app/components/balls/lotto-<wbr>ball/lotto-<wbr>ball.component"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="_app_components_balls_lotto_ball_lotto_ball_utils_.html">"app/components/balls/lotto-<wbr>ball/lotto-<wbr>ball.utils"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -151,7 +146,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="_app_lotto_lotto_component_.html">"app/lotto/lotto.component"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="_environments_environment_.html">"environments/environment"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -170,8 +165,8 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module">
-						<a href="_environments_environment_.html#environment" class="tsd-kind-icon">environment</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_app_components_balls_lotto_ball_lotto_ball_utils_.html#getballcolorclassname" class="tsd-kind-icon">get<wbr>Ball<wbr>Color<wbr>Class<wbr>Name</a>
 					</li>
 				</ul>
 			</nav>

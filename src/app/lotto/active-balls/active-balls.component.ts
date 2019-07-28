@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
+import { createNumberRange } from "../../core/misc/";
 
 @Component({
   selector: "app-active-balls",
@@ -16,13 +17,9 @@ export class ActiveBallsComponent implements OnInit {
   createBallList = (
     from: number,
     to: number
-  ): { value: number; isActive: boolean }[] => {
-    return new Array(0 + (to - from + 1)).fill(0).map((_, index) => {
-      const value = from + index;
-      return {
-        value,
-        isActive: this.checkIsBallActive(value)
-      };
-    });
-  };
+  ): { value: number; isActive: boolean }[] =>
+    createNumberRange(from, to).map(value => ({
+      value,
+      isActive: this.checkIsBallActive(value)
+    }));
 }
