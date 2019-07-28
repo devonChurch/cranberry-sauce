@@ -4,8 +4,8 @@ import { By } from "@angular/platform-browser";
 import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
 import { ActiveBallsComponent } from "./active-balls.component";
-import { SectionComponent } from "../../components/containers/section/section.component";
-import { LottoBallComponent } from "../../components/balls/lotto-ball/lotto-ball.component";
+import { SectionComponent } from "@components/containers/section/section.component";
+import { LottoBallComponent } from "@components/balls/lotto-ball/lotto-ball.component";
 
 @Component({
   selector: "host-component",
