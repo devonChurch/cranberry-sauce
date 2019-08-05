@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, EventEmitter, Output } from "@angular/core";
+import { getBallColorClassName } from "./lotto-ball.utils";
 
 @Component({
   selector: "app-lotto-ball",
@@ -13,4 +14,6 @@ export class LottoBallComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  getBallColorClassName = getBallColorClassName;
 }

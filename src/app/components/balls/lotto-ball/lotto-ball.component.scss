@@ -1,3 +1,29 @@
+$purple: #6200ea;
+$red: #e53935;
+$green: #00bfa5;
+$orange: #ff6d00;
+$blue: #2962ff;
+
+@mixin createBallColor($color) {
+  $backgroundColor: scale-color($color, $lightness: 70%);
+  $borderColor: $color;
+  $textColor: scale-color($color, $lightness: -30%);
+
+  background: $backgroundColor;
+  border: 1px solid $borderColor;
+  color: $textColor;
+
+  &.ball--active {
+    $backgroundColor: $color;
+    $borderColor: $color;
+    $textColor: white;
+
+    color: $textColor;
+    background: $backgroundColor;
+    border-color: $borderColor;
+  }
+}
+
 .ball {
   // Reset.
   border: 0;
@@ -6,15 +32,32 @@
   padding: 0;
 
   // Custom.
-  border: 1px solid black;
   border-radius: 2px;
-  background: gray;
-  color: white;
+  cursor: pointer;
   display: block;
+  font-weight: bold;
+  height: 2rem;
+  pointer-events: initial;
   transition: all 200ms;
-  width: 30px;
+  width: 2rem;
 
-  &--active {
-    background: green;
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &.ball--purple {
+    @include createBallColor($purple);
+  }
+  &.ball--red {
+    @include createBallColor($red);
+  }
+  &.ball--green {
+    @include createBallColor($green);
+  }
+  &.ball--orange {
+    @include createBallColor($orange);
+  }
+  &.ball--blue {
+    @include createBallColor($blue);
   }
 }
